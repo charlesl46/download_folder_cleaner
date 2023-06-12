@@ -1,12 +1,14 @@
 import os
+import sys
 import shutil
 
 
-def clean():
-    folder_to_clean = "YOUR FOLDER TO CLEAN"
+def main():
 
-    if folder_to_clean == "YOUR FOLDER TO CLEAN":
-        print("<!> You need to specify the folder to clean in the code")
+    args = sys.argv[1:]
+    folder_to_clean = 
+
+    folder_to_clean = FOLDER_TO_CLEAN
     others_folder = f"{folder_to_clean}/autres"
 
     folder_extensions = {
@@ -63,4 +65,4 @@ def clean():
             nb_files_moved += 1
             files_moved.append((file,dest_folder))
 
-clean()
+main()
