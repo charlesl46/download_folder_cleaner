@@ -1,9 +1,9 @@
 import os
 import sys
 import shutil
-from rich.console import Console
+#from rich.console import Console
 
-C = Console()
+#C = Console()
 folder_to_clean = "/Users/lucas/Downloads"
 others_folder = f"{folder_to_clean}/autres"
 
@@ -39,7 +39,7 @@ folder_extensions = {
     "java" : f"{folder_to_clean}/programmes"
     }
 
-with C.status("Parsing directory..."):
+#with C.status("Parsing directory..."):
     folders = ['applications','archives','documents','programmes','musique','vidéos','images','pdf','autres','gros fichiers']
     files_moved = []
 
@@ -67,5 +67,5 @@ with C.status("Parsing directory..."):
             nb_files_moved += 1
             files_moved.append((file,dest_folder))
         
-    C.log(f"{nb_files_moved} files moved")
+    #C.log(f"{nb_files_moved} files moved")
 
