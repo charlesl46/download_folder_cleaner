@@ -31,13 +31,12 @@ exe = EXE(
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
-    console=False,
+    console=True,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['recycle.png'],
 )
 coll = COLLECT(
     exe,
@@ -48,10 +47,4 @@ coll = COLLECT(
     upx=True,
     upx_exclude=[],
     name='cleaner',
-)
-app = BUNDLE(
-    coll,
-    name='cleaner.app',
-    icon='recycle.png',
-    bundle_identifier=None,
 )

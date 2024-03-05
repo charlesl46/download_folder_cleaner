@@ -1,1 +1,0 @@
-pylint cleaner.py
